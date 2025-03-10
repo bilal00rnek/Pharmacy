@@ -1,0 +1,84 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Bilal\\Desktop\\web\\Lab 11\\Task\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{4246BFA0-7CA9-44B3-909B-F23A8A65B54F}|Template\\Template.csproj|c:\\users\\bilal\\desktop\\web\\lab 11\\task\\template\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4246BFA0-7CA9-44B3-909B-F23A8A65B54F}|Template\\Template.csproj|solutionrelative:template\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4246BFA0-7CA9-44B3-909B-F23A8A65B54F}|Template\\Template.csproj|C:\\Users\\Bilal\\Desktop\\web\\Lab 11\\Task\\template\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4246BFA0-7CA9-44B3-909B-F23A8A65B54F}|Template\\Template.csproj|solutionrelative:template\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4246BFA0-7CA9-44B3-909B-F23A8A65B54F}|Template\\Template.csproj|C:\\Users\\Bilal\\Desktop\\web\\Lab 11\\Task\\template\\views\\home\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4246BFA0-7CA9-44B3-909B-F23A8A65B54F}|Template\\Template.csproj|solutionrelative:template\\views\\home\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4246BFA0-7CA9-44B3-909B-F23A8A65B54F}|Template\\Template.csproj|C:\\Users\\Bilal\\Desktop\\web\\Lab 11\\Task\\template\\models\\model1.edmx||{C99AEA30-8E36-4515-B76F-496F5A48A6AA}|",
+      "RelativeMoniker": "D:0:0:{4246BFA0-7CA9-44B3-909B-F23A8A65B54F}|Template\\Template.csproj|solutionrelative:template\\models\\model1.edmx||{C99AEA30-8E36-4515-B76F-496F5A48A6AA}|"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Model1.edmx [Diagram1]",
+              "DocumentMoniker": "C:\\Users\\Bilal\\Desktop\\web\\Lab 11\\Task\\Template\\Models\\Model1.edmx",
+              "RelativeDocumentMoniker": "Template\\Models\\Model1.edmx",
+              "ToolTip": "C:\\Users\\Bilal\\Desktop\\Lab 11\\Task\\Template\\Models\\Model1.edmx [Diagram1]",
+              "RelativeToolTip": "..\\..\\..\\Lab 11\\Task\\Template\\Models\\Model1.edmx [Diagram1]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001116|",
+              "WhenOpened": "2025-01-13T11:53:23.359Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\Bilal\\Desktop\\web\\Lab 11\\Task\\Template\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "Template\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\Bilal\\Desktop\\web\\Lab 11\\Task\\Template\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "Template\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAC8AAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-13T11:41:53.38Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Login.cshtml",
+              "DocumentMoniker": "C:\\Users\\Bilal\\Desktop\\web\\Lab 11\\Task\\Template\\Views\\Home\\Login.cshtml",
+              "RelativeDocumentMoniker": "Template\\Views\\Home\\Login.cshtml",
+              "ToolTip": "C:\\Users\\Bilal\\Desktop\\web\\Lab 11\\Task\\Template\\Views\\Home\\Login.cshtml",
+              "RelativeToolTip": "Template\\Views\\Home\\Login.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-13T11:41:53.469Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Bilal\\Desktop\\web\\Lab 11\\Task\\Template\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "Template\\Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Bilal\\Desktop\\web\\Lab 11\\Task\\Template\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "Template\\Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAE4AAAAAAAAAAAAAAHMAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-13T11:41:53.471Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

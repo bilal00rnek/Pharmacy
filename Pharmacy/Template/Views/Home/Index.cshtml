@@ -1,0 +1,140 @@
+﻿@model List<Template.Models.Sale>
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <br />
+    <div class="container">
+        <form method="post" onsubmit="return checkAndConfirm()" action="/Home/Add">
+            <div class="row">
+                <div class="col-lg-12">
+                    <select required class="form-control" name="PatientID" id="PatientID">
+                        <option selected disabled value="">
+                            Choose a Patient
+                        </option>
+                        @foreach (Template.Models.Patient patient in ViewBag.patients)
+                        {
+                            <option value="@patient.PatientID">
+                                @patient.PatientName
+                            </option>
+                        }
+                    </select>
+                </div>
+            </div>
+            <br />
+            <div class="row">
+                <div class="col-lg-12">
+                    <select required class="form-control" name="MedicineID" id="MedicineID">
+                        <option selected disabled value="">
+                            Choose a Medicine
+                        </option>
+                        @foreach (Template.Models.Medicine medicine in ViewBag.medicines)
+                        {
+                            <option value="@medicine.MedicineID">
+                                @medicine.MedicineName - @medicine.MedicineMg MG (@medicine.MedicinePrice)
+                            </option>
+                        }
+                    </select>
+                </div>
+            </div>
+            <br />
+            <div class="row">
+                <div class="col-lg-12">
+                    <input type="number" id="amount" name="amount" required class="form-control" placeholder="Amount" />
+                </div> 
+            </div>
+            <br />
+            <div class="row">
+                <div class="col-lg-12">
+                    <button class="btn btn-success btn-block" type="submit">Add Medicine</button>
+                </div>
+            </div>
+        </form>
+        @if (ViewBag.error != null)
+        {
+            <br />
+            <div class="row">
+                <div class="col-lg-12">
+                    <h3 style="color:red">@ViewBag.error</h3>
+                </div>
+            </div>
+        }
+    </div>
+    <br />
+    <hr />
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <h1 class="text-center">SALES</h1>
+                <table class="table table-striped">
+                    <tr>
+                        <th>
+                            Sale ID
+                        </th>
+                        <th>
+                            Patient ID
+                        </th>
+                        <th>
+                            Medicine ID
+                        </th>
+                        <th>
+                            Amount
+                        </th>
+                        <th>
+                            Operation
+                        </th>
+                    </tr>
+                    @foreach (Template.Models.Sale selection in Model)
+                    {
+                        <tr>
+                            <td>
+                                @selection.SalesID
+                            </td>
+                            <td>
+                                @selection.PatientID
+                            </td>
+                            <td>
+                                @selection.MedicineID
+                            </td>
+                            <td>
+                                @selection.amount
+                            </td>
+                            <td>
+                                <a class="btn btn-danger" href="/Home/Remove?SalesID=@selection.SalesID">Remove Sale</a>
+                            </td>
+                        </tr>
+                    }
+                </table>
+            </div>
+        </div>
+        <br />
+        <div class="row">
+            <div class="col-lg-12">
+                <h3>Total sales:  @Model.Count</h3>
+            </div>
+        </div>
+    </div>
+    <script>
+        function checkAndConfirm() {
+            if (confirm("Are you sure to sell?")) {
+                return true;
+            }
+            else
+                return false;
+        }
+    </script>
+</body>
+</html>
